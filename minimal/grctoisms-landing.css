@@ -1,0 +1,245 @@
+/* ========================================
+   grctoisms.com - Production CSS
+   DPO as a Service Landing Page
+   ======================================== */
+
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #FFFFFF;
+  color: #1e3a8a;
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Page Layout */
+.page {
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.navbar a {
+  color: #1e3a8a;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  color: #0d9488;
+}
+
+/* Header - LEFT ALIGNED */
+header {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  letter-spacing: 0.03em;
+  line-height: 1.4;
+  color: #1e3a8a;
+  margin: 0 0 1rem 0;
+  text-align: left;
+}
+
+header h1 span {
+  display: block;
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-top: 8px;
+  text-align: left;
+}
+
+/* Main Content */
+main {
+  text-align: left;
+}
+
+/* Projects Grid - Three Equal Cards (LEFT ALIGNED) */
+.projects-grid {
+  display: flex;
+  gap: 24px;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-bottom: 32px;
+}
+
+.project-card {
+  background: #0d9488;
+  border-radius: 18px;
+  padding: 24px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1 1 0;
+  min-width: 0;
+  color: white;
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+}
+
+.project-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.project-subtitle {
+  font-size: 0.8rem;
+  opacity: 0.85;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.project-body {
+  font-size: 0.8rem;
+  opacity: 0.9;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.project-link {
+  margin-top: auto;
+  font-size: 0.8rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+/* Collaboration Section */
+.collaboration {
+  padding: 24px 22px;
+  border-radius: 18px;
+  background: #1e3a8a;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.collaboration h2 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  color: white;
+}
+
+.collaboration p {
+  font-size: 0.8rem;
+  opacity: 0.95;
+  line-height: 1.6;
+  color: white;
+}
+
+.collaboration-btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background-color: #0d9488;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: background-color 0.2s ease;
+}
+
+.collaboration-btn:hover {
+  background-color: #066d63;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.disclaimer-link,
+.linkedin-link {
+  flex: 1;
+}
+
+.disclaimer-link {
+  text-align: left;
+}
+
+.disclaimer-link a {
+  color: #1e3a8a;
+  text-decoration: none;
+}
+
+.disclaimer-link a:hover {
+  text-decoration: underline;
+}
+
+.linkedin-link {
+  text-align: right;
+}
+
+.linkedin-link a {
+  color: #1e3a8a;
+  text-decoration: none;
+}
+
+.linkedin-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .projects-grid {
+    flex-direction: column;
+  }
+  
+  .footer {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
