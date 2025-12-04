@@ -23,22 +23,22 @@ body {
   align-items: center;
 }
 
-/* Page Layout */
+/* PERFECT ALIGNMENT FOR ALL ELEMENTS */
 .page {
   width: 100%;
   max-width: 1100px;
+  margin: auto auto;
 }
 
-/* Navigation Bar */
-.navbar {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 1.5rem;
-  width: 100%;
+/* Align ALL content sections identically */
+.navbar, header h1, .projects-grid, .collaboration, .footer {
+  padding-left: 20px;
+  padding-right: 20px;
   max-width: 1100px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
 }
-
 .navbar a {
   color: #1e3a8a;
   text-decoration: none;
@@ -102,6 +102,7 @@ main {
   color: white;
   text-align: left;
   transition: transform 0.2s ease;
+  margin-left: 0;  /* No extra left margin */
 }
 
 .project-card:hover {
@@ -165,7 +166,7 @@ main {
   color: white;
 }
 
-.collaboration-btn {
+.contact-btn {
   display: inline-block;
   margin-top: 16px;
   padding: 10px 20px;
@@ -178,7 +179,7 @@ main {
   transition: background-color 0.2s ease;
 }
 
-.collaboration-btn:hover {
+.contact-btn:hover {
   background-color: #066d63;
 }
 
